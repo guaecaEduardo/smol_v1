@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^REQ-[0-9]{3}$",
+      "title": "ID"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "this_is_a": {
+      "type": "string",
+      "enum": [
+        "Functional Requirement",
+        "Non-Functional Requirement",
+        "Security Requirement",
+        "User Interface Requirement",
+        "Flexibility Requirement"
+      ],
+      "title": "This Is A"
+    },
+    "ReqStatus": {
+      "type": "string",
+      "enum": ["Pending", "Approved", "Rejected"],
+      "title": "Requirement Status"
+    },
+    "ImpStatus": {
+      "type": "string",
+      "enum": ["Not Implemented", "In Progress", "Completed"],
+      "title": "Implementation Status"
+    }
+  },
+  "required": ["id", "description", "this_is_a", "ReqStatus", "ImpStatus"],
+
+  "columns": [
+    {
+      "field": "id",
+      "headerName": "ID",
+      "editorType": "text",
+      "editable": true,
+      "width": 150
+    },
+    {
+      "field": "description",
+      "headerName": "Description",
+      "editorType": "textarea",
+      "editable": true,
+      "width": 400
+    },
+    {
+      "field": "this_is_a",
+      "headerName": "this_is_a",
+      "editorType": "select",
+      "editable": true,
+      "width": 200,
+      "valueOptions": [
+        "Context",
+        "Chapter",
+        "Comment",
+        "Functional Requirement",
+        "Non-Functional Requirement",
+        "Security Requirement",
+        "User Interface Requirement",
+        "Flexibility Requirement"
+      ]
+    },
+    {
+      "field": "ReqStatus",
+      "headerName": "Requirement Status",
+      "editorType": "select",
+      "editable": true,
+      "width": 200,
+      "valueOptions": ["Pending", "Approved", "Rejected"]
+    },
+    {
+      "field": "ImpStatus",
+      "headerName": "Implementation Status",
+      "editorType": "select",
+      "editable": true,
+      "width": 200,
+      "valueOptions": ["Not Implemented", "In Progress", "Completed"]
+    }
+  ],
+	"uiStyles": {
+	  "styleControlColumn": "this_is_a", 
+	  "applyToColumn": "description",
+	  "styles": {
+		"Chapter": { "backgroundColor": "#434343", "fontWeight": "bold", "textTransform": "capitalize", "fontSize": "1.2em", "border-radius":"5px" },
+		"Context": { "backgroundColor": "#FFFFFF", "color": "black", "fontStyle": "italic" },
+		"Comment": { "backgroundColor": "#FFFFFF", "color": "#2E7D32", "fontStyle": "italic" },
+		"Functional Requirement": { "backgroundColor": "#FFFFFF" },
+		"Non-Functional Requirement": { "backgroundColor": "#FFFFFF" },
+		"Security Requirement": { "backgroundColor": "#FFFFFF" },
+		"User Interface Requirement": { "backgroundColor": "#FFFFFF" },
+		"Flexibility Requirement": { "backgroundColor": "#FFFFFF" }
+	  }
+
+
+
+  },
+  "rows": [
+    {
+      "id": "REQ-001",
+      "description": "The system shall allow users to import JSON files into a table format.",
+      "this_is_a": "Functional Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-002",
+      "description": "The system shall allow users to export table data into a JSON file.",
+      "this_is_a": "Functional Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-003",
+      "description": "The system shall support creating new entries directly in the table format.",
+      "this_is_a": "Functional Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-004",
+      "description": "The system shall support updating existing entries within the table format.",
+      "this_is_a": "Functional Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-005",
+      "description": "The system shall support deleting entries directly from the table.",
+      "this_is_a": "Functional Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-006",
+      "description": "The system shall allow users to specify and configure entity types such as code, Eduardo, or system for each JSON file.",
+      "this_is_a": "Flexibility Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-007",
+      "description": "The system shall validate JSON file structure upon import to ensure compatibility.",
+      "this_is_a": "Non-Functional Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-008",
+      "description": "The system shall display imported JSON data in a user-friendly and editable table format.",
+      "this_is_a": "User Interface Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-009",
+      "description": "The system shall provide options to filter and sort data within the table format.",
+      "this_is_a": "Functional Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-010",
+      "description": "The system shall log all CRUD operations for audit purposes.",
+      "this_is_a": "Security Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-010",
+      "description": "The system shall log all CRUD operations for audit purposes.",
+      "this_is_a": "Security Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-010",
+      "description": "The system shall log all CRUD operations for audit purposes.",
+      "this_is_a": "Security Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-010",
+      "description": "The system shall log all CRUD operations for audit purposes.",
+      "this_is_a": "Security Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-010",
+      "description": "The system shall log all CRUD operations for audit purposes.",
+      "this_is_a": "Security Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-010",
+      "description": "The system shall log all CRUD operations for audit purposes.",
+      "this_is_a": "Security Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    },
+    {
+      "id": "REQ-010",
+      "description": "The system shall log all CRUD operations for audit purposes.",
+      "this_is_a": "Security Requirement",
+      "ReqStatus": "Pending",
+      "ImpStatus": "Not Implemented"
+    }
+  ]
+}

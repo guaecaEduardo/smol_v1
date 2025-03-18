@@ -1,0 +1,81 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+*.env
+Pipfile
+Pipfile.lock
+
+# Log files
+*.log
+*.out
+
+# Cache and temp files
+*.bak
+*.swp
+*.tmp
+*.temp
+*.old
+*.orig
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nosetests
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE files (VSCode, PyCharm, JetBrains)
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.wheel
+
+# Generated files
+*.manifest
+*.spec
+*.pot
+
+# Test artifacts
+test-results/
+.coverage
+
+# Database files
+*.sqlite3
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+
+# Ignore logs, debug, and temporary files
+*.log
+*.bak
+*.swp
+*.swo
+*.tmp

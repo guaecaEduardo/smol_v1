@@ -1,0 +1,6 @@
+{
+  "project_name": "Requirement Management System",
+  "project_goal": "To build a tool that allows users to manage requirements in a table-based format.",
+  "target_users": "Software developers and project managers.",
+  "platform": "Web-based system."
+}
