@@ -14,6 +14,8 @@ from agentsTools.toolRunMainFixApplier import toolRunMainFixApplier
 from agentsTools.toolReadFile import get_file_source
 from agentsTools.toolApplyCodeFix import toolApplyCodeFix
 from agentsTools.toolGetProjectContext import toolGetProjectContext
+from agentsTools.toolUpdateFile import update_file
+
 
 from models.openai_model import get_openai_model
 from models.gemini_model import get_gemini_model
@@ -29,8 +31,9 @@ async def run_agent():
         tools=[
             navigate_code,
             get_file_source,
-            toolApplyCodeFix,
+            # toolApplyCodeFix,
             toolGetProjectContext,
+            update_file,
             # toolRunMainErrorAnalyzer,
             # toolRunMainFixApplier
         ],

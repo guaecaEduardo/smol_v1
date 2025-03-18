@@ -1,0 +1,17 @@
+[33mcommit e435a7ee82c96182e42e26d9047b0b5e79242c1d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Eduardo Silva <eduardo@guaeca.fr>
+Date:   Tue Mar 18 16:48:41 2025 +0100
+
+     api keys via env varibles
+
+[33mcommit 8bc1f4a74ce58109d068339b5cb71859de3ed747[m
+Author: Eduardo Silva <eduardo@guaeca.fr>
+Date:   Tue Mar 18 16:45:13 2025 +0100
+
+    initial files
+
+[33mcommit aac38360c521d78915409ca9c790aebd698902c2[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Eduardo Silva <eduardo@guaeca.fr>
+Date:   Tue Mar 18 16:43:02 2025 +0100
+
+     Add python gitignore
