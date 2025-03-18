@@ -6,10 +6,12 @@
 
 #system imports
 import json
+import sys
+sys.path.append("./src")
 
 #import tools
-from projectAgentsTools.toolClassifier import RequirementClassifierTool
-from projectAgentsTools.toolUpdateFeature import FeatureUpdateTool
+from src.projectAgentsTools.toolClassifier import RequirementClassifierTool
+from src.projectAgentsTools.toolUpdateFeature import FeatureUpdateTool
 
 #import agents
 from projectAgents import RequirementClassifierAgent
